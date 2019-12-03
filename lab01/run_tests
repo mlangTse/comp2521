@@ -1,0 +1,24 @@
+#!/bin/sh
+
+./randList 100000 > /tmp/nums
+	echo === random ===
+    sort -R < /tmp/nums > randomOrderWithDuplicates
+    echo useIntList
+    time ./useIntList < randomOrderWithDuplicates > out1
+    echo usesort
+    time sort -n < randomOrderWithDuplicates > out2
+    
+
+	#echo === rsort ===
+	#sort -n < /tmp/nums > alreadySortedWithDuplicates
+	#echo useIntList
+    #time ./useIntList < alreadySortedWithDuplicates > out1
+    #echo usesort
+    #time sort -n < alreadySortedWithDuplicates > out2
+    
+	#echo === reverse ===
+    #sort -nr < /tmp/nums > reverseSortedWithDuplicates
+	#echo useIntList
+    #time ./useIntList < reverseSortedWithDuplicates > out1
+    #echo usesort
+    #time sort -n < reverseSortedWithDuplicates > out2

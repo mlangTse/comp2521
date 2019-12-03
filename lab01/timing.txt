@@ -1,0 +1,39 @@
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dups	of runs	forusel	forsort
+5000	random	no	10	0.13sec	0.007sec
+5000	sorted	no	10	0.035sec	0.006sec
+5000	reverse	no	10	0.032sec	0.006sec
+5000	random	yes	10	0.017sec	0.008sec
+5000	sorted	yes	10	0.055sec	0.007sec
+5000	reverse	yes	10	0.035sec	0.007sec
+
+10000	random	no	10	0.465sec	0.007sec
+10000	sorted	no	10	0.048sec	0.008sec
+10000	reverse	no	10	0.045sec	0.007sec
+10000	random	yes	10	0.48sec	0.015sec
+10000	sorted	yes	10	0.122sec	0.009sec
+10000	reverse	yes	10	0.058sec	0.01sec
+
+15000	random	no	10	1.05sec	0.11sec
+15000	sorted	no	10	0.6sec	0.09sec
+15000	reverse	no	10	0.05sec	0.01sec
+15000	random	yes	10	0.97sec	0.01sec
+15000	sorted	yes	10	0.15sec	0.007sec
+15000	reverse	yes	10	0.047sec	0.01sec
+
+20000	random	no	10	1.963sec	0.024sec
+20000	sorted	no	10	0.074sec	0.013sec
+20000	reverse	no	10	0.06sec	0.012sec
+20000	random	yes	10	1.95sec	0.016sec
+20000	sorted	yes	10	0.21sec	0.008sec
+20000	reverse	yes	10	0.054sec	0.011sec
+
+
+As the above table, 
+the program that I wrote for sorting,
+it's clearly to say that as the input is increasing, 
+the average time of running the code is increasing. 
+Also, for every 5000 inputs increase, the timing is twice.
+However, the timing of sort by my own code 
+is much larger than the timing of sort by use "sort". 
+Therefore, it can be say that my code is not very efficent.

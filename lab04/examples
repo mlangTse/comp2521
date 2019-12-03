@@ -1,0 +1,491 @@
+# ... insert 20 random values using standard BST insertion
+$ ./tlab 20 R L
+#nodes = 20,  depth = 7,  #compares = 76,  #rotates = 0
+               334
+                 \
+                2901
+                 / \
+                /   \
+               /     \
+              /       \
+             /         \
+            /           \
+           /             \
+          /               \
+         /                 \
+        /                   \
+      2278                 4343
+      / \                   / \
+     /   \                 /   \
+    /     \               /     \
+  1867   2497           3911   9927
+  /       / \           /       /
+1754     /   \        3880    7432
+        /     \       /       / \
+      2472   2857   3210     /   \
+                    /       /     \
+                  2904     /       \
+                         5717     8314
+                           \       / \
+                          6717    /   \
+                                 /     \
+                               7736   8423
+
+Search for 20 values known to be in tree
+Found 20 matches; ok
+Search for 6 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 20,  depth = 7,  #compares = 177,  #rotates = 0
+               334
+                 \
+                2901
+                 / \
+                /   \
+               /     \
+              /       \
+             /         \
+            /           \
+           /             \
+          /               \
+         /                 \
+        /                   \
+      2278                 4343
+      / \                   / \
+     /   \                 /   \
+    /     \               /     \
+  1867   2497           3911   9927
+  /       / \           /       /
+1754     /   \        3880    7432
+        /     \       /       / \
+      2472   2857   3210     /   \
+                    /       /     \
+                  2904     /       \
+                         5717     8314
+                           \       / \
+                          6717    /   \
+                                 /     \
+                               7736   8423
+
+> 
+
+# ... insert 20 random values using standard BST insertion
+# ... uses a different seed to produce a different tree
+$ ./tlab 20 R L 2
+#nodes = 20,  depth = 8,  #compares = 71,  #rotates = 0
+             5839
+              / \
+             /   \
+            /     \
+           /       \
+          /         \
+         /           \
+        /             \
+       /               \
+      /                 \
+     /                   \
+    /                     \
+  614                    5859
+  / \                       \
+ /   \                     7867
+54   666                    / \
+       \                   /   \
+      1162                /     \
+       / \               /       \
+      /   \            7123     9424
+     /     \           / \       /
+   1045   3535        /   \    8991
+           / \       /     \
+          /   \    7094   7717
+         /     \           /
+       3316   4919       7129
+       /       /
+     1860    3691
+               \
+              3963
+
+Search for 20 values known to be in tree
+Found 20 matches; ok
+Search for 6 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 20,  depth = 8,  #compares = 170,  #rotates = 0
+             5839
+              / \
+             /   \
+            /     \
+           /       \
+          /         \
+         /           \
+        /             \
+       /               \
+      /                 \
+     /                   \
+    /                     \
+  614                    5859
+  / \                       \
+ /   \                     7867
+54   666                    / \
+       \                   /   \
+      1162                /     \
+       / \               /       \
+      /   \            7123     9424
+     /     \           / \       /
+   1045   3535        /   \    8991
+           / \       /     \
+          /   \    7094   7717
+         /     \           /
+       3316   4919       7129
+       /       /
+     1860    3691
+               \
+              3963
+
+> 
+
+# ... insert 10 ordered values using standard BST insertion
+# ... guaranteed to produce a degenerate tree with one long branch
+$ ./tlab 10 A L
+#nodes = 10,  depth = 10,  #compares = 45,  #rotates = 0
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+           \
+            7
+             \
+              8
+               \
+                9
+                 \
+                 10
+
+Search for 10 values known to be in tree
+Found 10 matches; ok
+Search for 3 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 10,  depth = 10,  #compares = 109,  #rotates = 0
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+           \
+            7
+             \
+              8
+               \
+                9
+                 \
+                 10
+
+> 
+
+# ... insert 15 values using standard BST insertion
+# ... supplies values in prefix order to produce a balanced tree
+$ ./tlab 15 P L
+#nodes = 15,  depth = 4,  #compares = 34,  #rotates = 0
+              8
+             / \
+            /   \
+           /     \
+          /       \
+         /         \
+        /           \
+       /             \
+      4              12
+     / \             / \
+    /   \           /   \
+   /     \         /     \
+  2       6       10     14
+ / \     / \     / \     / \
+1   3   5   7   9  11   /   \
+                       13   15
+
+Search for 15 values known to be in tree
+Found 15 matches; ok
+Search for 5 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 15,  depth = 4,  #compares = 98,  #rotates = 0
+              8
+             / \
+            /   \
+           /     \
+          /       \
+         /         \
+        /           \
+       /             \
+      4              12
+     / \             / \
+    /   \           /   \
+   /     \         /     \
+  2       6       10     14
+ / \     / \     / \     / \
+1   3   5   7   9  11   /   \
+                       13   15
+
+> 
+
+# ... insert 20 random values (in random order) into an AVL tree
+$ ./tlab 20 R V
+#nodes = 20,  depth = 6,  #compares = 69,  #rotates = 14
+                  2901
+                   / \
+                  /   \
+                 /     \
+                /       \
+               /         \
+              /           \
+             /             \
+            /               \
+           /                 \
+          /                   \
+         /                     \
+       2278                   4343
+       / \                     / \
+      /   \                   /   \
+     /     \                 /     \
+    /       \               /       \
+  1867     2497            /         \
+  /         / \           /           \
+334        /   \        3880         7432
+  \       /     \       / \           / \
+ 1754   2472   2857    /   \         /   \
+                      /     \       /     \
+                    3210   3911    /       \
+                    /            5717     8314
+                  2904             \       / \
+                                  6717    /   \
+                                         /     \
+                                       7736   9927
+                                               /
+                                             8423
+
+Search for 20 values known to be in tree
+Found 20 matches; ok
+Search for 6 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 20,  depth = 6,  #compares = 169,  #rotates = 14
+                  2901
+                   / \
+                  /   \
+                 /     \
+                /       \
+               /         \
+              /           \
+             /             \
+            /               \
+           /                 \
+          /                   \
+         /                     \
+       2278                   4343
+       / \                     / \
+      /   \                   /   \
+     /     \                 /     \
+    /       \               /       \
+  1867     2497            /         \
+  /         / \           /           \
+334        /   \        3880         7432
+  \       /     \       / \           / \
+ 1754   2472   2857    /   \         /   \
+                      /     \       /     \
+                    3210   3911    /       \
+                    /            5717     8314
+                  2904             \       / \
+                                  6717    /   \
+                                         /     \
+                                       7736   9927
+                                               /
+                                             8423
+
+> 
+
+# ... insert 15 descending values into an AVL tree
+$ ./tlab 15 D V
+#nodes = 15,  depth = 4,  #compares = 45,  #rotates = 11
+              8
+             / \
+            /   \
+           /     \
+          /       \
+         /         \
+        /           \
+       /             \
+      4              12
+     / \             / \
+    /   \           /   \
+   /     \         /     \
+  2       6       10     14
+ / \     / \     / \     / \
+1   3   5   7   9  11   /   \
+                       13   15
+
+Search for 15 values known to be in tree
+Found 15 matches; ok
+Search for 5 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 15,  depth = 4,  #compares = 116,  #rotates = 11
+              8
+             / \
+            /   \
+           /     \
+          /       \
+         /         \
+        /           \
+       /             \
+      4              12
+     / \             / \
+    /   \           /   \
+   /     \         /     \
+  2       6       10     14
+ / \     / \     / \     / \
+1   3   5   7   9  11   /   \
+                       13   15
+
+> 
+
+# ... insert 20 random values (in random order) into a Splay tree
+$ ./tlab 20 R S
+#nodes = 20,  depth = 8,  #compares = 69,  #rotates = 69
+              2857
+               / \
+              /   \
+             /     \
+            /       \
+           /         \
+         2497       8314
+         /           / \
+       2472         /   \
+       /           /     \
+     2278        3210   8423
+     /           / \       \
+   1754         /   \     9927
+   / \         /     \
+  /   \      2904   7736
+334  1867    /       /
+           2901    5717
+                   / \
+                  /   \
+                 /     \
+                /       \
+              3880     7432
+                \       /
+               3911   6717
+                  \
+                 4343
+
+Search for 20 values known to be in tree
+Found 20 matches; ok
+Search for 6 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 20,  depth = 11,  #compares = 269,  #rotates = 155
+     334
+       \
+      1867
+       / \
+      /   \
+     /     \
+   1754   9927
+           /
+         2904
+         / \
+        /   \
+       /     \
+      /       \
+     /         \
+    /           \
+  2278         8423
+    \           /
+   2857       3210
+    / \         \
+   /   \       7432
+  /     \       / \
+2472   2901    /   \
+  \           /     \
+ 2497        /       \
+           5717     8314
+           / \       /
+          /   \    7736
+         /     \
+       3880   6717
+         \
+        3911
+           \
+          4343
+
+> 
+
+# ... insert 15 descending values into a Splay tree
+$ ./tlab 15 D S
+#nodes = 15,  depth = 15,  #compares = 14,  #rotates = 14
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+           \
+            7
+             \
+              8
+               \
+                9
+                 \
+                 10
+                   \
+                   11
+                     \
+                     12
+                       \
+                       13
+                         \
+                         14
+                           \
+                           15
+
+Search for 15 values known to be in tree
+Found 15 matches; ok
+Search for 5 values known to *not* be in tree
+Found 0 matches; ok
+#nodes = 15,  depth = 8,  #compares = 161,  #rotates = 77
+  1
+   \
+    4
+   / \
+  /   \
+ /     \
+2      15
+ \     /
+  3   8
+     / \
+    /   \
+   /     \
+  /       \
+ /         \
+5          13
+ \         / \
+  6       /   \
+   \     10   14
+    7   / \
+       9  12
+          /
+         11
+
+> 
+
